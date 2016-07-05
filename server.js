@@ -21,6 +21,11 @@ app.get('/about',middleware.requireAuthentication, function(req,res){
 	res.send('About us');
 });
 
+
+app.get('/contact',function(req, res){
+	res.send('contact us at 673-450-3988')
+
+});
 app.use(express.static(__dirname + '/public'));
 
 app.listen(PORT, function(){
