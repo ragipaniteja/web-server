@@ -23,7 +23,7 @@ app.get('/about',middleware.requireAuthentication, function(req,res){
 
 
 app.get('/contact',function(req, res){
-	res.send('contact us at 673-450-3988')
+	res.send('contact us at 673-450-3998')
 
 });
 app.use(express.static(__dirname + '/public'));
